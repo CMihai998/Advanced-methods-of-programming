@@ -1,0 +1,36 @@
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (b int;(a = 2 + 3 * 5;(b = a + 1;print(b)))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=0}
+Out: []
+-------------------
+Execution Stack: (a = 2 + 3 * 5;(b = a + 1;print(b))) --- 
+Symbol table: {a=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=0, b=0}
+Out: []
+-------------------
+Execution Stack: (b = a + 1;print(b)) --- 
+Symbol table: {a=0, b=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=17, b=0}
+Out: []
+-------------------
+Execution Stack: print(b) --- 
+Symbol table: {a=17, b=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=17, b=18}
+Out: []
+-------------------
