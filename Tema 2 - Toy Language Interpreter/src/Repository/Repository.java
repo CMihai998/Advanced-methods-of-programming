@@ -37,6 +37,7 @@ public class Repository implements iRepository {
             logFIle.print("Execution Stack: " + programStateList.get(0).getExecutionStack().toString() + '\n');
             logFIle.print("Symbol table: " + programStateList.get(0).getSymbolTable().toString() + '\n');
             logFIle.print("Out: " + programStateList.get(0).getOut().toString() + '\n');
+            logFIle.print("Heap table: " + programStateList.get(0).getHeapTable() + '\n');
             logFIle.print("-------------------" + '\n');
         }catch (IOException error){
             throw new  MyException(error.toString());

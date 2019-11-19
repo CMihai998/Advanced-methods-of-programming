@@ -4,7 +4,9 @@ import Model.Exceptions.MyException;
 import Model.PrgState;
 import Model.Structures.MyIDictionary;
 import Model.Structures.MyIStack;
+import Model.Types.BoolType;
 import Model.Types.IntType;
+import Model.Types.StringType;
 import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
@@ -26,15 +28,7 @@ public class VariableDeclarationStatement implements iStatement {
         if(symbolTable.isDefined(name)){
             throw new MyException("Variable already declared!");
         }else{
-            if(type instanceof IntType){
-                symbolTable.update(name, new IntValue());
-            }
-            else if(type instanceof BoolValue){
-                symbolTable.update(name, new BoolValue());
-            }
-            else if(type instanceof StringValue){
-                symbolTable.update(name, new StringValue());
-            }
+            symbolTable.update(name, type.defaultValue());
         }
         return state;
     }

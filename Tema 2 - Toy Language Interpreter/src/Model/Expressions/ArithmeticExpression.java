@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Model.Exceptions.MyException;
 import Model.Structures.MyIDictionary;
+import Model.Structures.iHeap;
 import Model.Types.IntType;
 import Model.Values.IntValue;
 import Model.Values.Value;
@@ -29,11 +30,11 @@ public class ArithmeticExpression implements iExpression {
     }
 
     @Override
-    public Value evaluate(MyIDictionary<String, Value> table) throws MyException {
+    public Value evaluate(MyIDictionary<String, Value> table, iHeap<Integer, Value> heapTable) throws MyException {
         Value v1, v2;
-        v1 = e1.evaluate(table);
+        v1 = e1.evaluate(table, heapTable);
         if (v1.getType().equals(new IntType())) {
-            v2 = e2.evaluate(table);
+            v2 = e2.evaluate(table, heapTable);
             if (v2.getType().equals(new IntType())) {
                 IntValue i1 = (IntValue) v1;
                 IntValue i2 = (IntValue) v2;

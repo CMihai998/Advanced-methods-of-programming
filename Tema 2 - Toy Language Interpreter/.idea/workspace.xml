@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="" />
+    <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MyGarbageCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/ReadHeapExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/NewStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/WriteHeapStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/WhileStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Structures/HeapTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Structures/iHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Types/RefType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Values/RefValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ArithmeticExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ArithmeticExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/LogicExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/LogicExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/RelationalExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/RelationalExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ValueExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ValueExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/VariableExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/VariableExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/iExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/iExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/AssignmentStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/AssignmentStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/CloseRFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/CloseRFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/OpenRFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/OpenRFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/ReadFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/IfStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/IfStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/PrintStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/PrintStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/VariableDeclarationStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/VariableDeclarationStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Repository/Repository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/View/UserInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ArithmeticExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithmeticExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/LogicExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/LogicExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/RelationalExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/RelationalExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ValueExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ValueExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/VariableExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/VariableExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/iExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/iExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignmentStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignmentStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/CloseRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/CloseRFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/OpenRFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/VariableDeclarationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VariableDeclarationStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Structures/FileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/FileTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyIDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyIDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +74,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1SWcS6n1MFkoICetpIPIk1uTfja" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -48,16 +108,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserInterface">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Tema 2 - Toy Language Interpreter" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="View.UserInterface" />
+  <component name="RunManager" selected="Application.Interpreter">
+    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.Interpreter" />
       <module name="Tema 2 - Toy Language Interpreter" />
       <extension name="coverage">
         <pattern>
@@ -69,9 +122,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Tema 2 - Toy Language Interpreter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserInterface" />
+        <item itemvalue="Application.Interpreter" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -104,19 +164,45 @@
       <workItem from="1573663714507" duration="6504000" />
       <workItem from="1573674586831" duration="100000" />
       <workItem from="1573682721687" duration="1646000" />
+      <workItem from="1574070724198" duration="8000000" />
+      <workItem from="1574112087877" duration="3006000" />
+      <workItem from="1574175937643" duration="12192000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Controller/Controller.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/View/TextMenu.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

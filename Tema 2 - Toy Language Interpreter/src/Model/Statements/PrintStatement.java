@@ -5,6 +5,7 @@ import Model.Expressions.iExpression;
 import Model.PrgState;
 import Model.Structures.MyIDictionary;
 import Model.Structures.MyIList;
+import Model.Structures.iHeap;
 import Model.Values.Value;
 
 public class PrintStatement implements iStatement {
@@ -34,7 +35,8 @@ public class PrintStatement implements iStatement {
     public PrgState execute(PrgState state) throws MyException {
         MyIList<Value> list = state.getOut();
         MyIDictionary<String, Value> symbolTable = state.getSymbolTable();
-        list.add(this.expression.evaluate(symbolTable));
+        iHeap<Integer, Value> heapTable = state.getHeapTable();
+        list.add(this.expression.evaluate(symbolTable, heapTable));
         return state;
     }
 

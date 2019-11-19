@@ -5,6 +5,7 @@ import Model.Expressions.iExpression;
 import Model.PrgState;
 import Model.Structures.MyIDictionary;
 import Model.Structures.MyIStack;
+import Model.Structures.iHeap;
 import Model.Types.Type;
 import Model.Values.Value;
 
@@ -19,9 +20,9 @@ public class AssignmentStatement implements iStatement {
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
-        MyIStack<iStatement> stack = state.getExecutionStack();
         MyIDictionary<String, Value> symbolTable = state.getSymbolTable();
-        Value value = expression.evaluate(symbolTable);
+        iHeap<Integer, Value> heapTable = state.getHeapTable();
+        Value value = expression.evaluate(symbolTable, heapTable);
         if(symbolTable.isDefined(id)){
             Type typeId = symbolTable.get(id).getType();
             if(value.getType().equals(typeId)){

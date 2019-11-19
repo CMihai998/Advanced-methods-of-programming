@@ -1,0 +1,148 @@
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Model.Expressions.ReadHeapExpression@3941a79c);(a Ref( Ref( int ) );((New a v );((New v 30 );print(Model.Expressions.ReadHeapExpression@506e1b77 + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (print(Model.Expressions.ReadHeapExpression@3941a79c);(a Ref( Ref( int ) );((New a v );((New v 30 );print(Model.Expressions.ReadHeapExpression@506e1b77 + 5))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=( 0, int )}
+Out: []
+-------------------
+Execution Stack: (print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5))))) --- 
+Symbol table: {v=( 0, int )}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=( 0, int )}
+Out: []
+-------------------
+Execution Stack: (print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5))))) --- 
+Symbol table: {v=( 0, int )}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: ((New v 20 );(print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=( 0, int )}
+Out: []
+-------------------
+Execution Stack: (print(Read (v));(a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5))))) --- 
+Symbol table: {v=( 0, int )}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=( 1, int )}
+Out: []
+-------------------
+Execution Stack: (a Ref( Ref( int ) );((New a v );((New v 30 );print(Read (Read (a)) + 5)))) --- 
+Symbol table: {v=( 1, int )}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=( 1, int )}
+Out: [20]
+-------------------
+Execution Stack: ((New a v );((New v 30 );print(Read (Read (a)) + 5))) --- 
+Symbol table: {v=( 1, int )}
+Out: [20]
+-------------------
+Execution Stack: 
+Symbol table: {a=( 0, Ref( int ) ), v=( 1, int )}
+Out: [20]
+-------------------
+Execution Stack: ((New v 30 );print(Read (Read (a)) + 5)) --- 
+Symbol table: {a=( 0, Ref( int ) ), v=( 1, int )}
+Out: [20]
+-------------------
+Execution Stack: 
+Symbol table: {a=( 2, Ref( int ) ), v=( 1, int )}
+Out: [20]
+-------------------
+Execution Stack: print(Read (Read (a)) + 5) --- 
+Symbol table: {a=( 2, Ref( int ) ), v=( 1, int )}
+Out: [20]
+-------------------
+Execution Stack: 
+Symbol table: {a=( 2, Ref( int ) ), v=( 3, int )}
+Out: [20]
+-------------------

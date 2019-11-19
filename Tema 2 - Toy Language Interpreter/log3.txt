@@ -1,0 +1,184 @@
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=false}
+Out: []
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=false, v=0}
+Out: []
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=false, v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=false}
+Out: []
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=false, v=0}
+Out: []
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=false, v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=false}
+Out: []
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=false, v=0}
+Out: []
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=false, v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: []
+-------------------

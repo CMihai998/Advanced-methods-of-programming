@@ -5,9 +5,7 @@ import Model.Values.StringValue;
 
 import java.lang.reflect.MalformedParameterizedTypeException;
 
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class MyDictionary<Type1, Type2> implements MyIDictionary<Type1, Type2> {
     Map<Type1, Type2> dictionary;
@@ -41,6 +39,11 @@ public class MyDictionary<Type1, Type2> implements MyIDictionary<Type1, Type2> {
     @Override
     public Type2 update(Type1 key, Type2 value) {
         return dictionary.put(key,value);
+    }
+
+    @Override
+    public List<Type2> getContent() {
+        return new LinkedList<>(this.dictionary.values());
     }
 
     @Override

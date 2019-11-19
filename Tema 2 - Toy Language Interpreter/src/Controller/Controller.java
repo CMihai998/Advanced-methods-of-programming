@@ -7,10 +7,12 @@ import Model.Structures.MyIStack;
 import Repository.iRepository;
 
 public class Controller {
-    iRepository repository;
+    private iRepository repository;
+    private MyGarbageCollector garbageCollector;
 
     public Controller(iRepository repository){
         this.repository = repository;
+        this.garbageCollector = new MyGarbageCollector();
     }
 
     public PrgState oneStepEvaluation(PrgState state) throws MyException {
@@ -27,10 +29,16 @@ public class Controller {
 
     public PrgState allStepEvaluation() throws MyException{
         PrgState program = repository.getCurrentProgramState();
-        while(!program.getExecutionStack().isEmpty()){
+        while(!program.getExecutionStack().isEmpty()) {
             oneStepEvaluation(program);
+            program.getHeapTable().setContent(
+                    garbageCollector.safeGarbageCollector(
+                            garbageCollector.addIndirections(garbageCollector.getAddressFromSymbolTable(program.getSymbolTable().getContent()),program.getHeapTable()),
+                            program.getHeapTable()));
+
             System.out.println(repository.getCurrentProgramState().toString() + '\n');
         }
+        program.reset();
         return program;
     }
 

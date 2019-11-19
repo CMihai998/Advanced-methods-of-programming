@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Model.Exceptions.MyException;
 import Model.Structures.MyIDictionary;
+import Model.Structures.iHeap;
 import Model.Values.IntValue;
 import Model.Values.Value;
 
@@ -13,7 +14,7 @@ public class ValueExpression implements iExpression {
     }
 
     @Override
-    public Value evaluate(MyIDictionary<String, Value> table) throws MyException {
+    public Value evaluate(MyIDictionary<String, Value> table, iHeap<Integer, Value> heapTable) throws MyException {
         return val;
     }
     @Override

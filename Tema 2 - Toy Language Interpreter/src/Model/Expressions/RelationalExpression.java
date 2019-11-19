@@ -2,9 +2,11 @@ package Model.Expressions;
 
 import Model.Exceptions.MyException;
 import Model.Structures.MyIDictionary;
+import Model.Structures.iHeap;
 import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Values.BoolValue;
+import Model.Values.IntValue;
 import Model.Values.Value;
 
 public class RelationalExpression implements iExpression{
@@ -19,14 +21,14 @@ public class RelationalExpression implements iExpression{
     }
 
     @Override
-    public Value evaluate(MyIDictionary<String, Value> table) throws MyException {
+    public Value evaluate(MyIDictionary<String, Value> table, iHeap<Integer, Value> heapTable) throws MyException {
         Value value2;
-        Value value1 = expression1.evaluate(table);
+        Value value1 = expression1.evaluate(table, heapTable);
         if(value1.getType().equals(new IntType())){
-            value2 = expression2.evaluate(table);
+            value2 = expression2.evaluate(table, heapTable);
             if(value2.getType().equals(new IntType())){
-                IntType i1 = (IntType) value1;
-                IntType i2 = (IntType) value2;
+                IntValue i1 = (IntValue) value1;
+                IntValue i2 = (IntValue) value2;
 
                 int n1, n2;
                 n1 = i1.getValue();

@@ -6,6 +6,7 @@ import Model.PrgState;
 import Model.Statements.iStatement;
 import Model.Structures.FileTable;
 import Model.Structures.MyIDictionary;
+import Model.Structures.iHeap;
 import Model.Types.StringType;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -24,7 +25,8 @@ public class CloseRFile implements iStatement {
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary symbolTable = state.getSymbolTable();
         FileTable fileTable = (FileTable) state.getFileTable();
-        Value value = expression.evaluate(symbolTable);
+        iHeap<Integer, Value> heapTable = state.getHeapTable();
+        Value value = expression.evaluate(symbolTable, heapTable);
 
         if(!(value.getType().equals(new StringType()))){
             throw new MyException("Failed to close the file :'( \n STRING NOT VALID");
@@ -47,5 +49,10 @@ public class CloseRFile implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new CloseRFile(this.expression.deepcopy());
+    }
+
+    @Override
+    public String toString(){
+        return "close(" + expression.toString() + ")";
     }
 }

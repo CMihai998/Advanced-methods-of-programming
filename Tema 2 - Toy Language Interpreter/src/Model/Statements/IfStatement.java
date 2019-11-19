@@ -5,6 +5,7 @@ import Model.Expressions.iExpression;
 import Model.PrgState;
 import Model.Structures.MyIDictionary;
 import Model.Structures.MyIStack;
+import Model.Structures.iHeap;
 import Model.Types.BoolType;
 import Model.Values.BoolValue;
 import Model.Values.Value;
@@ -36,7 +37,8 @@ public class IfStatement implements iStatement {
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<iStatement> executionStack = state.getExecutionStack();
         MyIDictionary<String, Value> symbolTable = state.getSymbolTable();
-        Value condition = expression.evaluate(symbolTable);
+        iHeap<Integer, Value> heapTable = state.getHeapTable();
+        Value condition = expression.evaluate(symbolTable, heapTable);
         if(condition.getType() instanceof BoolType){
            BoolValue actualValue = (BoolValue) condition;
            if(actualValue.getValue()){

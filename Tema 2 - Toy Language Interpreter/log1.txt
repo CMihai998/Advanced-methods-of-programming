@@ -1,1 +1,40 @@
-Execution Stack: Symbol table: {}Out: []Execution Stack: (v = 2;print(v)) --- Symbol table: {}Out: []Execution Stack: Symbol table: {v=0}Out: []Execution Stack: print(v) --- Symbol table: {v=0}Out: []Execution Stack: Symbol table: {v=2}Out: []
+Execution Stack: Symbol table: {}Out: []Execution Stack: (v = 2;print(v)) --- Symbol table: {}Out: []Execution Stack: Symbol table: {v=0}Out: []Execution Stack: print(v) --- Symbol table: {v=0}Out: []Execution Stack: Symbol table: {v=2}Out: []Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v = 2;print(v)) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=2}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: (v = 2;print(v)) --- 
+Symbol table: {}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {v=0}
+Out: []
+-------------------
+Execution Stack: 
+Symbol table: {v=2}
+Out: []
+-------------------
