@@ -1,13 +1,17 @@
 package Controller;
 
+import Model.PrgState;
 import Model.Structures.iHeap;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MyGarbageCollector {
 
@@ -17,6 +21,17 @@ public class MyGarbageCollector {
         return heapSet.stream()
                 .filter(e -> symbolTableAddresses.contains(e.getKey())) //don't take in consideration elements that are not reachable
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));//collect em all in a list
+    }
+
+    public List<Integer> getAddressFromTables(List<PrgState> programs){
+        return programs.stream()
+                    .map(prgState -> prgState.getSymbolTable().getContent().stream())
+                    .flatMap(Function.identity())
+                    .collect(Collectors.toList())
+                    .stream()
+                    .filter(element -> element instanceof RefValue)
+                    .map(element -> ((RefValue) element).getAddress())
+                    .collect(Collectors.toList());
     }
 
     public List<Integer> getAddressFromSymbolTable(List<Value> content){
@@ -38,7 +53,7 @@ public class MyGarbageCollector {
             List<Integer> appendingList = null;
             change = false;
             appendingList = heapSet.stream()
-                                   .filter(e -> e.getValue() instanceof RefValue)//check if val in heap is RefValue so it can have indirections todo SEMINAR
+                                   .filter(e -> e.getValue() instanceof RefValue)//check if val in heap is RefValue so it can have indirections
                                    .filter(e -> newAddressList.contains(e.getKey()))//check if address list contains ref to this
                                    .map(e -> (((RefValue) e.getValue()).getAddress()))//map the reference to its address so we can add it
                                    .filter(e -> !newAddressList.contains(e))//check if the address list already has that reference from prev elems

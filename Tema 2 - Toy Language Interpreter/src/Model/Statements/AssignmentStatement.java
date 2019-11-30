@@ -31,7 +31,7 @@ public class AssignmentStatement implements iStatement {
             else throw new MyException("Declared type of variable " + id + " and type of the assigned expression do not match :'(");
         }
         else throw new MyException("The used variable " + id + " was not declared!");
-        return state;
+        return null;
     }
 
     @Override

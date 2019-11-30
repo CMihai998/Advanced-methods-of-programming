@@ -37,7 +37,7 @@ public class PrintStatement implements iStatement {
         MyIDictionary<String, Value> symbolTable = state.getSymbolTable();
         iHeap<Integer, Value> heapTable = state.getHeapTable();
         list.add(this.expression.evaluate(symbolTable, heapTable));
-        return state;
+        return null;
     }
 
 }

@@ -49,6 +49,6 @@ public class IfStatement implements iStatement {
         } else {
             throw new MyException("This is not a logical expression!");
         }
-        return state;
+        return null;
     }
 }

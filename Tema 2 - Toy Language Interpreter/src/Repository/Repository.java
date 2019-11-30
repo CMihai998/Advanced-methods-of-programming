@@ -22,7 +22,7 @@ public class Repository implements iRepository {
     @Override
     public PrgState getCurrentProgramState() {
         if(!programStateList.isEmpty())
-            return programStateList.get(0); //TODO change this
+            return programStateList.get(0);
         return new PrgState();
     }
 
@@ -32,15 +32,35 @@ public class Repository implements iRepository {
     }
 
     @Override
-    public void logProgramStateExecution() throws MyException {
+    public void logProgramStateExecution(PrgState state) throws MyException {
         try(PrintWriter logFIle = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))){
-            logFIle.print("Execution Stack: " + programStateList.get(0).getExecutionStack().toString() + '\n');
-            logFIle.print("Symbol table: " + programStateList.get(0).getSymbolTable().toString() + '\n');
-            logFIle.print("Out: " + programStateList.get(0).getOut().toString() + '\n');
-            logFIle.print("Heap table: " + programStateList.get(0).getHeapTable() + '\n');
+            logFIle.print("Execution Stack: " + state.getExecutionStack().toString() + '\n');
+            logFIle.print("Symbol table: " + state.getSymbolTable().toString() + '\n');
+            logFIle.print("Out: " + state.getOut().toString() + '\n');
+            logFIle.print("Heap table: " + state.getHeapTable() + '\n');
             logFIle.print("-------------------" + '\n');
         }catch (IOException error){
             throw new  MyException(error.toString());
         }
+    }
+
+    @Override
+    public List<PrgState> getProgramList() {
+        return programStateList;
+    }
+
+    @Override
+    public void setProgramStateList(List<PrgState> newList) {
+        this.programStateList = newList;
+    }
+
+    public void reset(){
+        programStateList.forEach(program -> {
+            try {
+                program.reset();
+            } catch (MyException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }

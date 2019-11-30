@@ -33,7 +33,7 @@ public class WhileStatement implements iStatement {
                 stack.push(statement);
             }
         }else throw new MyException("Conditional expression is not a boolean value");
-        return state;
+        return null;
     }
 
     @Override

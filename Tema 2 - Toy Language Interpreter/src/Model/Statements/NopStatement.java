@@ -9,7 +9,7 @@ public class NopStatement implements iStatement {
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
-        return state;
+        return null;
     }
 
     @Override

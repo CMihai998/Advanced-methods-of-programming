@@ -49,7 +49,7 @@ public class OpenRFile implements iStatement {
         } catch (IOException e) {
             throw new MyException("Open file failed :'( \n IO Exception");
         }
-        return state;
+        return null;
     }
 
     @Override

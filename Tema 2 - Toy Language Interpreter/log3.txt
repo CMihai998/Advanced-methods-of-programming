@@ -182,3 +182,343 @@ Execution Stack:
 Symbol table: {a=true, v=2}
 Out: []
 -------------------
+Execution Stack: (a bool;(v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a bool;(v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: [0]
+Heap table: {}
+-------------------
+Execution Stack: v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: [0]
+Heap table: {}
+-------------------
+Execution Stack: v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: [0]
+Heap table: {}
+-------------------
+Execution Stack: v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: [0]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: [0]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: [0]
+Heap table: {}
+-------------------
+Execution Stack: (a bool;(v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a bool;(v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: [2]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: [2]
+Heap table: {}
+-------------------
+Execution Stack: (a bool;(v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a bool;(v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v)))) --- a bool --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a = true;(IF(a)THEN(v = 2)ELSE(v = 3);print(v))) --- v int --- 
+Symbol table: {a=false}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (IF(a)THEN(v = 2)ELSE(v = 3);print(v)) --- a = true --- 
+Symbol table: {a=false, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- IF(a)THEN(v = 2)ELSE(v = 3) --- 
+Symbol table: {a=true, v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=2}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=2}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=2}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {a=true, v=2}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: [2]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {a=true, v=2}
+Out: [2]
+Heap table: {}
+-------------------

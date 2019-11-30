@@ -50,7 +50,7 @@ public class WriteHeapStatement implements iStatement {
         }
 
         heapTable.update(((RefValue) oldValue).getAddress(), newValue);
-        return state;
+        return null;
     }
 
     @Override

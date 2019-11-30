@@ -14,8 +14,8 @@ public class RunExampleCommand extends Command {
     @Override
     public void execute() {
         try{
-            controller.allStepEvaluation();
-        } catch (MyException e) {
+            controller.allStep();
+        } catch (MyException | InterruptedException e) {
             System.out.println(e.getMessage());
         }
     }

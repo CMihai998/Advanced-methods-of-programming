@@ -2,62 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MyGarbageCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/ReadHeapExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/NewStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/WriteHeapStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/WhileStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Structures/HeapTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Structures/iHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Types/RefType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Values/RefValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/ForkStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ArithmeticExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ArithmeticExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/LogicExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/LogicExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/RelationalExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/RelationalExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ValueExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/ValueExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/VariableExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/VariableExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/iExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Expressions/iExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/AssignmentStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/AssignmentStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/CloseRFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/CloseRFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/OpenRFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/OpenRFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/FileOperations/ReadFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/IfStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/IfStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/PrintStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/PrintStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/VariableDeclarationStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/VariableDeclarationStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Repository/Repository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/View/UserInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ArithmeticExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithmeticExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/LogicExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/LogicExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/RelationalExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/RelationalExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ValueExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ValueExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/VariableExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/VariableExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/iExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/iExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MyGarbageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MyGarbageCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignmentStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignmentStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CompoundStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CompoundStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/CloseRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/CloseRFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/OpenRFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/NewStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/NewStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/WriteHeapStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/WriteHeapStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/VariableDeclarationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VariableDeclarationStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/WhileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/WhileStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Structures/FileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/FileTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyIDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyIDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/iRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/iRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/RunExampleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RunExampleCommand.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +42,23 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Tema 2 - Toy Language Interpreter" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,6 +76,11 @@
   </component>
   <component name="ProjectId" id="1SWcS6n1MFkoICetpIPIk1uTfja" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -94,19 +93,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Interpreter">
     <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -135,6 +123,18 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -167,6 +167,18 @@
       <workItem from="1574070724198" duration="8000000" />
       <workItem from="1574112087877" duration="3006000" />
       <workItem from="1574175937643" duration="12192000" />
+      <workItem from="1574192146624" duration="633000" />
+      <workItem from="1574198489276" duration="464000" />
+      <workItem from="1574284754310" duration="575000" />
+      <workItem from="1574676312354" duration="3382000" />
+      <workItem from="1574779394483" duration="2331000" />
+      <workItem from="1574957743057" duration="607000" />
+      <workItem from="1574959539141" duration="343000" />
+      <workItem from="1574962917473" duration="6259000" />
+      <workItem from="1575042918484" duration="611000" />
+      <workItem from="1575054612086" duration="222000" />
+      <workItem from="1575132104336" duration="2713000" />
+      <workItem from="1575138403529" duration="14707000" />
     </task>
     <servers />
   </component>
@@ -196,15 +208,44 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/View/TextMenu.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="555" y="215" width="800" height="732" key="#Intentions" timestamp="1575140485752">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="215" width="800" height="732" key="#Intentions/0.27.1920.1053@0.27.1920.1053" timestamp="1575140485752" />
+    <state x="643" y="282" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575140476805" />
+    <state x="643" y="282" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575140476806" />
+    <state width="1878" height="243" key="GridCell.Tab.0.bottom" timestamp="1575154704971">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="243" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704971" />
+    <state width="1878" height="243" key="GridCell.Tab.0.center" timestamp="1575154704970">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="243" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704970" />
+    <state width="1878" height="243" key="GridCell.Tab.0.left" timestamp="1575154704970">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="243" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704970" />
+    <state width="1878" height="243" key="GridCell.Tab.0.right" timestamp="1575154704970">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="243" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704970" />
+    <state width="918" height="477" key="GridCell.Tab.1.bottom" timestamp="1575151531631">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="918" height="477" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
+    <state width="918" height="477" key="GridCell.Tab.1.center" timestamp="1575151531631">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="918" height="477" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
+    <state width="918" height="477" key="GridCell.Tab.1.left" timestamp="1575151531631">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="918" height="477" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
+    <state width="918" height="477" key="GridCell.Tab.1.right" timestamp="1575151531631">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="918" height="477" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
   </component>
 </project>

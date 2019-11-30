@@ -12,4 +12,5 @@ public interface MyIDictionary<Type1, Type2> {
     List<Type2> getContent();
     String toString();
     boolean isDefined(Type1 id);
+   MyIDictionary<Type1, Type2> deepcopy();
 }

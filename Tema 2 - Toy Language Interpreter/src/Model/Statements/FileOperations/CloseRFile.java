@@ -43,7 +43,7 @@ public class CloseRFile implements iStatement {
             throw new MyException("Failed to close the file :'( \n READER COULD NOT BE CLOSED");
         }
         fileTable.remove((StringValue) value);
-        return state;
+        return null;
     }
 
     @Override

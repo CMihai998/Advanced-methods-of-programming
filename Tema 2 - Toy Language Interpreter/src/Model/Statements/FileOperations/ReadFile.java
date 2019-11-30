@@ -53,7 +53,7 @@ public class ReadFile implements iStatement {
         } catch (IOException e) {
             throw new MyException("Failed to read from file :'( \n COULDN'T READ LINES");
         }
-        return state;
+        return null;
     }
 
     @Override

@@ -44,7 +44,7 @@ public class NewStatement implements iStatement {
         valueToPutInTable.setAddress((Integer) heapTable.getCurrentFree());
         symbolTable.update(variableName, valueToPutInTable);
         heapTable.update(value);
-        return state;
+        return null;
     }
 
     @Override

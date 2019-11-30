@@ -86,6 +86,13 @@ public class Interpreter {
             Controller controller7 = new Controller(repository7);
             controller7.addProgram(program7);
 
+            iStatement example8 = programEight();
+            PrgState program8 = new PrgState(example8);
+            iRepository repository8 = new Repository("log8.txt");
+            repository8.addProgram(program8);
+            Controller controller8 = new Controller(repository8);
+            controller8.addProgram(program8);
+
             TextMenu menu = new TextMenu();
             menu.addCommand(new ExitCommand("0", "Exit"));
             menu.addCommand(new RunExampleCommand("1", example1.toString(), controller1));
@@ -95,11 +102,11 @@ public class Interpreter {
             menu.addCommand(new RunExampleCommand("5", example5.toString(), controller5));
             menu.addCommand(new RunExampleCommand("6", example6.toString(), controller6));
             menu.addCommand(new RunExampleCommand("7", example7.toString(), controller7));
+            menu.addCommand(new RunExampleCommand("8", example8.toString(), controller8));
             menu.show();
         }catch (MyException exception){
             System.out.println(exception.getMessage());
         }
-        //TODO comparators, files and more examples
     }
 
 
@@ -164,5 +171,17 @@ public class Interpreter {
                                 new NewStatement("a",new VariableExpression("v")),new CompoundStatement(
                                 new WriteHeapStatement("v",new ValueExpression(new IntValue(30))),
                                 new PrintStatement(new ArithmeticExpression('+' ,new ReadHeapExpression(new ReadHeapExpression( new VariableExpression("a"))),new ValueExpression(new IntValue(5))))))))));
+  }
+
+  private static iStatement programEight(){
+        iStatement forked =   new CompoundStatement(new WriteHeapStatement("a",new ValueExpression(new IntValue(30))),
+                new CompoundStatement(new AssignmentStatement("v",new ValueExpression(new IntValue(32))),
+                        new CompoundStatement(new PrintStatement(new VariableExpression("v")),new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))));
+      return new CompoundStatement(new VariableDeclarationStatement("v", new IntType()),
+              new CompoundStatement(new VariableDeclarationStatement("a",new RefType(new IntType())),
+                      new CompoundStatement(new AssignmentStatement("v",new ValueExpression(new IntValue(10))),
+                              new CompoundStatement(new NewStatement("a",new ValueExpression(new IntValue(22))),
+                                      new CompoundStatement(new ForkStatement(forked),new CompoundStatement(new PrintStatement(new VariableExpression("v")),new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))))
+                      )));
   }
 }
