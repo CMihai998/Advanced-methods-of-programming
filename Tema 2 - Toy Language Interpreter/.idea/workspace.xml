@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/ForkStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
@@ -12,28 +10,15 @@
       <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/ForkStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/ForkStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/View/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/View/Interpreter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MyGarbageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MyGarbageCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignmentStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignmentStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CompoundStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CompoundStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/CloseRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/CloseRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/OpenRFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/OpenRFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/FileOperations/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/FileOperations/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/NewStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/NewStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/WriteHeapStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/WriteHeapStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/VariableDeclarationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VariableDeclarationStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/WhileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/WhileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Structures/FileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/FileTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyIDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyIDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/iRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/iRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ForkStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ForkStatement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/RunExampleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RunExampleCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +163,16 @@
       <workItem from="1575042918484" duration="611000" />
       <workItem from="1575054612086" duration="222000" />
       <workItem from="1575132104336" duration="2713000" />
-      <workItem from="1575138403529" duration="14707000" />
+      <workItem from="1575138403529" duration="15370000" />
+      <workItem from="1575155990278" duration="139000" />
+      <workItem from="1575156315826" duration="1025000" />
+      <workItem from="1575194798019" duration="534000" />
+      <workItem from="1575208381994" duration="157000" />
+      <workItem from="1575233637502" duration="159000" />
+      <workItem from="1575279069022" duration="3829000" />
+      <workItem from="1575288061809" duration="3218000" />
+      <workItem from="1575378669434" duration="58000" />
+      <workItem from="1575397651607" duration="1832000" />
     </task>
     <servers />
   </component>
@@ -213,39 +207,49 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="215" width="800" height="732" key="#Intentions/0.27.1920.1053@0.27.1920.1053" timestamp="1575140485752" />
-    <state x="643" y="282" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575140476805" />
-    <state x="643" y="282" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575140476806" />
-    <state width="1878" height="243" key="GridCell.Tab.0.bottom" timestamp="1575154704971">
+    <state x="643" y="282" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575233649942">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704971" />
-    <state width="1878" height="243" key="GridCell.Tab.0.center" timestamp="1575154704970">
+    <state x="643" y="282" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575233649942" />
+    <state x="407" y="69" width="1095" height="975" key="CommitChangelistDialog2" timestamp="1575156088027">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704970" />
-    <state width="1878" height="243" key="GridCell.Tab.0.left" timestamp="1575154704970">
+    <state x="407" y="69" width="1095" height="975" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1575156088027" />
+    <state width="1878" height="417" key="GridCell.Tab.0.bottom" timestamp="1575403480367">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704970" />
-    <state width="1878" height="243" key="GridCell.Tab.0.right" timestamp="1575154704970">
+    <state width="1878" height="417" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480367" />
+    <state width="1878" height="417" key="GridCell.Tab.0.center" timestamp="1575403480366">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="243" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575154704970" />
-    <state width="918" height="477" key="GridCell.Tab.1.bottom" timestamp="1575151531631">
+    <state width="1878" height="417" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480366" />
+    <state width="1878" height="417" key="GridCell.Tab.0.left" timestamp="1575403480366">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="918" height="477" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
-    <state width="918" height="477" key="GridCell.Tab.1.center" timestamp="1575151531631">
+    <state width="1878" height="417" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480366" />
+    <state width="1878" height="417" key="GridCell.Tab.0.right" timestamp="1575403480367">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="918" height="477" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
-    <state width="918" height="477" key="GridCell.Tab.1.left" timestamp="1575151531631">
+    <state width="1878" height="417" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480367" />
+    <state width="918" height="477" key="GridCell.Tab.1.bottom" timestamp="1575155362054">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="918" height="477" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
-    <state width="918" height="477" key="GridCell.Tab.1.right" timestamp="1575151531631">
+    <state width="918" height="477" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575155362054" />
+    <state width="918" height="477" key="GridCell.Tab.1.center" timestamp="1575155362053">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="918" height="477" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575151531631" />
+    <state width="918" height="477" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575155362053" />
+    <state width="918" height="477" key="GridCell.Tab.1.left" timestamp="1575155362053">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="918" height="477" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575155362053" />
+    <state width="918" height="477" key="GridCell.Tab.1.right" timestamp="1575155362054">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="918" height="477" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575155362054" />
+    <state x="1053" y="187" width="764" height="739" key="git4idea.branch.GitSmartOperationDialog" timestamp="1575292650000">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1053" y="187" width="764" height="739" key="git4idea.branch.GitSmartOperationDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575292650000" />
   </component>
 </project>
