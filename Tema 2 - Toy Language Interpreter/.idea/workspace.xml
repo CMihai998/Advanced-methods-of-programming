@@ -3,22 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/PrgState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/ForkStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Statements/ForkStatement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/View/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/View/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ForkStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ForkStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +156,7 @@
       <workItem from="1575279069022" duration="3829000" />
       <workItem from="1575288061809" duration="3218000" />
       <workItem from="1575378669434" duration="58000" />
-      <workItem from="1575397651607" duration="1832000" />
+      <workItem from="1575397651607" duration="3004000" />
     </task>
     <servers />
   </component>
@@ -215,22 +199,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="407" y="69" width="1095" height="975" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1575156088027" />
-    <state width="1878" height="417" key="GridCell.Tab.0.bottom" timestamp="1575403480367">
+    <state width="1878" height="417" key="GridCell.Tab.0.bottom" timestamp="1575404030682">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="417" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480367" />
-    <state width="1878" height="417" key="GridCell.Tab.0.center" timestamp="1575403480366">
+    <state width="1878" height="417" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575404030682" />
+    <state width="1878" height="417" key="GridCell.Tab.0.center" timestamp="1575404030682">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="417" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480366" />
-    <state width="1878" height="417" key="GridCell.Tab.0.left" timestamp="1575403480366">
+    <state width="1878" height="417" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575404030682" />
+    <state width="1878" height="417" key="GridCell.Tab.0.left" timestamp="1575404030681">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="417" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480366" />
-    <state width="1878" height="417" key="GridCell.Tab.0.right" timestamp="1575403480367">
+    <state width="1878" height="417" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575404030681" />
+    <state width="1878" height="417" key="GridCell.Tab.0.right" timestamp="1575404030682">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="417" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575403480367" />
+    <state width="1878" height="417" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575404030682" />
     <state width="918" height="477" key="GridCell.Tab.1.bottom" timestamp="1575155362054">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
