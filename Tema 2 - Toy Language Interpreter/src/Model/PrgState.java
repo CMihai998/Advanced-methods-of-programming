@@ -25,7 +25,7 @@ public class PrgState {
         return lastAssignedId;
     }
 
-    public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable){
+    public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable) throws MyException {
         this.executionStack = executionStack;
         this. symbolTable = symbolTable;
         this.out = out;
@@ -33,10 +33,10 @@ public class PrgState {
         this.fileTable = fileTable;
         this.heapTable = heapTable;
         this.id = getNewId();
-        this.executionStack.push(originalProgram);
+        this.executionStack.push(originalProgram.deepcopy());
     }
 
-    public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable, int id){
+    public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable, int id) throws MyException {
         this.executionStack = executionStack;
         this. symbolTable = symbolTable;
         this.out = out;
@@ -44,7 +44,7 @@ public class PrgState {
         this.fileTable = fileTable;
         this.heapTable = heapTable;
         this.id = id;
-        this.executionStack.push(originalProgram);
+        this.executionStack.push(originalProgram.deepcopy());
     }
 
     public PrgState(iStatement originalProgram) throws MyException {
@@ -135,23 +135,21 @@ public class PrgState {
                 "Heap: " + heapTable.toString() + '\n';
     }
 
-    public PrgState deepcopy() throws MyException {
+    /*public PrgState deepcopy() throws MyException {
         return new PrgState(this.executionStack, this.symbolTable.deepcopy(), this.out, this.originalProgram.deepcopy(), this.fileTable.deepcopy(), this.heapTable);
-    }
+    }*/
 
     public Boolean isNotCompleted(){
         return !executionStack.isEmpty();
     }
 
     public PrgState oneStepExecution() throws MyException {
-        if(executionStack.isEmpty()) throw new MyException("Execution stack is empty! :'(");
+        if(executionStack.isEmpty()) throw new MyException("Execution stack is empty! :'( " + id);
 
         iStatement currentStatement = executionStack.pop();
 
-        if(currentStatement != null){
-            return currentStatement.execute(this);
-        }
-        return null;
+        return currentStatement.execute(this);
+
     }
 
 }

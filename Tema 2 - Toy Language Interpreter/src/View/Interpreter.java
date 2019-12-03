@@ -184,4 +184,17 @@ public class Interpreter {
                                       new CompoundStatement(new ForkStatement(forked),new CompoundStatement(new PrintStatement(new VariableExpression("v")),new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))))
                       )));
   }
+
+  private static iStatement programOpt(){
+      iStatement t1=new CompoundStatement(new VariableDeclarationStatement("v", new IntType()), new VariableDeclarationStatement("a", new RefType(new IntType())));
+      iStatement t2=new CompoundStatement(new AssignmentStatement("v", new ValueExpression(new IntValue(10))), new NewStatement("a", new ValueExpression(new IntValue(22))));
+      iStatement t3=new CompoundStatement(t1,t2);
+      iStatement t4=new CompoundStatement(new WriteHeapStatement("a", new ValueExpression(new IntValue(30))),
+              new CompoundStatement(new AssignmentStatement("v", new ValueExpression(new IntValue(32))),
+                      new CompoundStatement(new PrintStatement(new VariableExpression("v")), new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))));
+      iStatement t5=new CompoundStatement(t3 ,new ForkStatement(t4));
+      iStatement t6=new CompoundStatement(new PrintStatement(new VariableExpression("v")), new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))));
+      iStatement ex10=new CompoundStatement(t5, t6);
+      return ex10;
+  }
 }

@@ -25,13 +25,16 @@ public class Controller {
         programs.forEach(program -> {
             try {
                 repository.logProgramStateExecution(program);
+
             } catch (MyException e) {
                 System.out.println("One step failed 401 " + e.toString());
             }
         });
 
         //prepare list of callables
-        List<Callable<PrgState>> callList = programs.stream().map((PrgState program) -> (Callable<PrgState>)() -> {return  program.oneStepExecution();}).collect(Collectors.toList());
+        List<Callable<PrgState>> callList = programs.stream()
+                .map((PrgState program) -> (Callable<PrgState>)() -> {return  program.oneStepExecution();})
+                .collect(Collectors.toList());
 
         //start execution of callables
         List<PrgState> newProgramList = null;
@@ -44,7 +47,8 @@ public class Controller {
                             System.out.println("One step failed 402 " + e.toString());
                         }
                         return null;
-                    }).filter(Objects::nonNull) // keeps only not null values
+                    })
+                    .filter(Objects::nonNull) // keeps only not null values
                     .collect(Collectors.toList());
         }catch (InterruptedException e){
             System.out.println(e.toString());
@@ -56,7 +60,7 @@ public class Controller {
         programs.forEach(program -> {
             try {
                 repository.logProgramStateExecution(program);
-                System.out.println(repository.getCurrentProgramState().toString() + '\n');
+                System.out.println(program.toString() + '\n');
             } catch (MyException e) {
                 System.out.println("One step failed 403 " + e.toString());;
             }
@@ -69,10 +73,10 @@ public class Controller {
 
         List<PrgState> programList = removeCompletedProgram(repository.getProgramList());
         while(programList.size() > 0){
-            repository.getCurrentProgramState().getHeapTable().setContent(
+            repository.getProgramList().stream().forEach(program -> program.getHeapTable().setContent(
                     garbageCollector.safeGarbageCollector(
-                            garbageCollector.addIndirections(garbageCollector.getAddressFromTables(repository.getProgramList()),repository.getCurrentProgramState().getHeapTable()),
-                            repository.getCurrentProgramState().getHeapTable()));
+                            garbageCollector.addIndirections(garbageCollector.getAddressFromTables(repository.getProgramList()),program.getHeapTable()),
+                            program.getHeapTable())));
             oneStepForAllPrograms(programList);
             programList = removeCompletedProgram(repository.getProgramList());
         }
@@ -88,7 +92,7 @@ public class Controller {
 
     public List<PrgState> removeCompletedProgram(List<PrgState> inProgress){
         return inProgress.stream()
-                .filter(PrgState::isNotCompleted)
+                .filter(program -> program.isNotCompleted())
                 .collect(Collectors.toList());
     }
 

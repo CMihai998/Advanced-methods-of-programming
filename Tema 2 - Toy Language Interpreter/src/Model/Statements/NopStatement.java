@@ -16,4 +16,9 @@ public class NopStatement implements iStatement {
     public iStatement deepcopy() throws MyException {
         return new NopStatement();
     }
+
+    @Override
+    public String toString(){
+        return "NOP";
+    }
 }
