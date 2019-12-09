@@ -2,6 +2,7 @@ package Repository;
 
 import Model.Exceptions.MyException;
 import Model.PrgState;
+import Model.Statements.iStatement;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -62,5 +63,10 @@ public class Repository implements iRepository {
                 e.printStackTrace();
             }
         });
+    }
+
+    @Override
+    public iStatement getOriginalProgram() {
+        return programStateList.get(0).getOriginalProgram();
     }
 }

@@ -8,6 +8,7 @@ import Model.Statements.iStatement;
 import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
 import Model.Types.RefType;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
@@ -56,6 +57,14 @@ public class WriteHeapStatement implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new WriteHeapStatement(this.variableName, this.expression.deepcopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type typeVariable = typeEnvironment.get(variableName);
+        Type typeExpression = expression.typeCheck(typeEnvironment);
+        if(!typeVariable.equals(new RefType(typeExpression))) throw new MyException("Assignment: right hand side and left hand side have different type");
+        return typeEnvironment;
     }
 
     @Override

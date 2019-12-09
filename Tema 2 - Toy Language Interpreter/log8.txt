@@ -7333,3 +7333,238 @@ Symbol table: {a=( 1, int ), v=32}
 Out: [10, 30, 32, 30]
 Heap table: {1=30}
 -------------------
+Execution Stack: (v int;(a Ref( int );(v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(a Ref( int );(v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))))))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a Ref( int );(v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a Ref( int );(v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a Ref( int );(v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (a Ref( int );(v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))))) --- 
+Symbol table: {a=( 0, int ), v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))))) --- 
+Symbol table: {a=( 0, int ), v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))))) --- 
+Symbol table: {a=( 0, int ), v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;(New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))))) --- 
+Symbol table: {a=( 0, int ), v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))) --- 
+Symbol table: {a=( 0, int ), v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))) --- 
+Symbol table: {a=( 0, int ), v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))) --- 
+Symbol table: {a=( 0, int ), v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (New(a->22);(fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a))))) --- 
+Symbol table: {a=( 0, int ), v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (fork(((a->30);(v = 32;(print(v);print(Read(a))))));(print(v);print(Read(a)))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- NOP --- NOP --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- NOP --- NOP --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: ((a->30);(v = 32;(print(v);print(Read(a))))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- NOP --- NOP --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- NOP --- NOP --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: ((a->30);(v = 32;(print(v);print(Read(a))))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (v = 32;(print(v);print(Read(a)))) --- (a->30) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: (v = 32;(print(v);print(Read(a)))) --- (a->30) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=22}
+-------------------
+Execution Stack: print(Read(a)) --- print(v) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- print(v) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=30}
+-------------------
+Execution Stack: (v = 32;(print(v);print(Read(a)))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- print(v) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- print(v) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=30}
+-------------------
+Execution Stack: (v = 32;(print(v);print(Read(a)))) --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: []
+Heap table: {1=30}
+-------------------
+Execution Stack: 
+Symbol table: {a=( 1, int ), v=10}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: 
+Symbol table: {a=( 1, int ), v=10}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- v = 32 --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- v = 32 --- 
+Symbol table: {a=( 1, int ), v=10}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: (print(v);print(Read(a))) --- 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- print(v) --- 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- print(v) --- 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30]
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30, 32]
+Heap table: {1=30}
+-------------------
+Execution Stack: print(Read(a)) --- 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30, 32]
+Heap table: {1=30}
+-------------------
+Execution Stack: 
+Symbol table: {a=( 1, int ), v=32}
+Out: [10, 30, 32, 30]
+Heap table: {1=30}
+-------------------

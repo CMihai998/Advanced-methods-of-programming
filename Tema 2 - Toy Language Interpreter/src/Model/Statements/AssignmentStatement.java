@@ -43,4 +43,12 @@ public class AssignmentStatement implements iStatement {
     public iStatement deepcopy() throws MyException {
         return new AssignmentStatement(this.id, this.expression.deepcopy());
     }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type typeVariable = typeEnvironment.get(id);
+        Type typeExpression = expression.typeCheck(typeEnvironment);
+        if(!typeVariable.equals(typeExpression)) throw new MyException("Assignment: right hand side and left hand side have different types!");
+        return typeEnvironment;
+    }
 }

@@ -1,18 +1,19 @@
 package Model.Structures;
 
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
 import java.util.*;
 
-public class MyDictionary<String, Value> implements MyIDictionary<java.lang.String, Model.Values.Value> {
-    HashMap<java.lang.String, Model.Values.Value> dictionary;
+public class MyDictionary<String, Type> implements MyIDictionary<java.lang.String, Type> {
+    HashMap<java.lang.String, Type> dictionary;
 
     public MyDictionary(){
-        this.dictionary = new HashMap<java.lang.String, Model.Values.Value>();
+        this.dictionary = new HashMap<java.lang.String, Type>();
     }
 
-    public MyDictionary(HashMap<java.lang.String, Model.Values.Value> map){
+    public MyDictionary(HashMap<java.lang.String, Type> map){
         this.dictionary = map;
     }
     @Override
@@ -27,23 +28,23 @@ public class MyDictionary<String, Value> implements MyIDictionary<java.lang.Stri
 
 
     @Override
-    public Model.Values.Value get(java.lang.String key) {
+    public Type get(java.lang.String key) {
         return dictionary.get(key);
     }
 
     @Override
-    public Model.Values.Value remove(java.lang.String key) {
+    public Type remove(java.lang.String key) {
         return dictionary.remove(key);
     }
 
 
     @Override
-    public Model.Values.Value update(java.lang.String key, Model.Values.Value value) {
+    public Type update(java.lang.String key, Type value) {
         return dictionary.put(key,value);
     }
 
     @Override
-    public List<Model.Values.Value> getContent() {
+    public List<Type> getContent() {
         return new LinkedList<>(this.dictionary.values());
     }
 
@@ -58,12 +59,26 @@ public class MyDictionary<String, Value> implements MyIDictionary<java.lang.Stri
     }
 
     @Override
-    public MyIDictionary<java.lang.String, Model.Values.Value> deepcopy() {
-        HashMap<java.lang.String, Model.Values.Value> clone = new HashMap<java.lang.String, Model.Values.Value>();
-        for (Map.Entry<java.lang.String, Model.Values.Value> element: dictionary.entrySet()){
-            clone.put(new java.lang.String(element.getKey()), element.getValue().deepcopy());
+    public MyIDictionary<java.lang.String, Type> deepcopy() {
+        HashMap<java.lang.String, Type> clone = new HashMap<java.lang.String, Type>();
+        for (Map.Entry<java.lang.String, Type> element: dictionary.entrySet()){
+            if(element.getValue() instanceof Value)
+                clone.put(new java.lang.String(element.getKey()), (Type) ((Value)element.getValue()).deepcopy());
+            else if(element.getValue() instanceof Model.Types.Type)
+                    clone.put(new java.lang.String(element.getKey()), (Type) ((Model.Types.Type)element.getValue()).deepcopy());
+            else
+                clone.put(new java.lang.String(element.getKey()), element.getValue());
         }
-        return new MyDictionary<java.lang.String, Model.Values.Value>(clone);
+        return new MyDictionary<java.lang.String, Type>(clone);
+    }
+
+    @Override
+    public MyIDictionary<java.lang.String, Type> shallowcopy() {
+        HashMap<java.lang.String, Type> clone = new HashMap<java.lang.String, Type>();
+        for (Map.Entry<java.lang.String, Type> element: dictionary.entrySet()){
+            clone.put(element.getKey(), element.getValue());
+        }
+        return new MyDictionary<java.lang.String, Type>(clone);
     }
 
     public boolean isDefined(StringValue id) {

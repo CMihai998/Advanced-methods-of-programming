@@ -197,4 +197,7 @@ public class Interpreter {
       iStatement ex10=new CompoundStatement(t5, t6);
       return ex10;
   }
+
+  //TODO add typeEnvironment field to prgState(? or not)
+    //TODO add typeCheck in execute before run with a locally created dictionary
 }

@@ -9,6 +9,7 @@ import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
 import Model.Types.IntType;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.IntValue;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -59,6 +60,13 @@ public class ReadFile implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new ReadFile(this.expression.deepcopy(), this.variableName);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type expressionType = expression.typeCheck(typeEnvironment);
+        if(!expressionType.equals(new IntType())) throw new MyException("The parameter of Close File is not of StringType!");
+        return typeEnvironment;
     }
 
     @Override

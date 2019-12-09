@@ -42,4 +42,11 @@ public class VariableDeclarationStatement implements iStatement {
     public iStatement deepcopy() throws MyException {
         return new VariableDeclarationStatement(this.name, this.type.deepcopy());
     }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        typeEnvironment.update(name, type);
+        return typeEnvironment;
+    }
 }
+

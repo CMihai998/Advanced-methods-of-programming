@@ -7,6 +7,8 @@ import Model.Structures.MyIDictionary;
 import Model.Structures.MyIStack;
 import Model.Structures.iHeap;
 import Model.Types.BoolType;
+import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
 
@@ -39,6 +41,14 @@ public class WhileStatement implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new WhileStatement(this.expression.deepcopy(), this.statement.deepcopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type typeExpression = expression.typeCheck(typeEnvironment);
+        if(!typeExpression.equals(new IntType())) throw new MyException("The condition of WHILE is not a boolean value!");
+        statement.typeCheck(typeEnvironment.deepcopy());
+        return typeEnvironment;
     }
 
     @Override

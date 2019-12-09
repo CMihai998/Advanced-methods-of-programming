@@ -5,6 +5,7 @@ import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
 import Model.Types.BoolType;
 import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Model.Values.Value;
@@ -66,6 +67,16 @@ public class RelationalExpression implements iExpression{
                     else if(operator == 5)
                         return expression1.toString() + " > " + expression2.toString() + '\n';
         return expression1.toString() + " >= " + expression2.toString() + '\n';
+    }
+
+    @Override
+    public Type typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type type1, type2;
+        type1 = expression1.typeCheck(typeEnvironment);
+        type2 = expression2.typeCheck(typeEnvironment);
+        if(!type1.equals(new IntType())) throw new MyException("First operand is not an integer!");
+        if(!type2.equals(new IntType())) throw new MyException("Second operand is not an integer!");
+        return new IntType();
     }
 
     @Override

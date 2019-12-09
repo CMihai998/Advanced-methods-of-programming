@@ -1,8 +1,10 @@
 package Model.Statements;
 
 import Model.Exceptions.MyException;
+import Model.Structures.MyIDictionary;
 import Model.Structures.MyIStack;
 import Model.PrgState;
+import Model.Types.Type;
 
 public class CompoundStatement implements iStatement {
     private iStatement first;
@@ -12,11 +14,6 @@ public class CompoundStatement implements iStatement {
         this.first = first;
         this.second = second;
     }
-
-    public CompoundStatement(iStatement v) {
-
-    }
-
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
@@ -34,6 +31,11 @@ public class CompoundStatement implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new CompoundStatement(this.first.deepcopy(), this.second.deepcopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        return second.typeCheck(first.typeCheck(typeEnvironment));
     }
 
 }

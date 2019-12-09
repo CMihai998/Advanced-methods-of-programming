@@ -1,0 +1,711 @@
+Execution Stack: (v int;(v = 10;while(v > 0
+)execute((print(v);v = v - 1)))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v int;(v = 10;while(v > 0
+)execute((print(v);v = v - 1)))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;while(v > 0
+)execute((print(v);v = v - 1))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;while(v > 0
+)execute((print(v);v = v - 1))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;while(v > 0
+)execute((print(v);v = v - 1))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 10;while(v > 0
+)execute((print(v);v = v - 1))) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=10}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=9}
+Out: [10]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=9}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=9}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=9}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=9}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=8}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=8}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=8}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=8}
+Out: [10, 9]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=8}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=8}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=8}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=8}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=7}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=7}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=7}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=7}
+Out: [10, 9, 8]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=7}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=7}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=7}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=7}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=6}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=5}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=4}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- (print(v);v = v - 1) --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- while(v > 0
+)execute((print(v);v = v - 1)) --- v = v - 1 --- 
+Symbol table: {v=0}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=-1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=-1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=-1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=-1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=-1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- print(v) --- v = v - 1 --- print(v) --- 
+Symbol table: {v=-1}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- 
+Symbol table: {v=-2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- 
+Symbol table: {v=-2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- 
+Symbol table: {v=-2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- 
+Symbol table: {v=-2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- 
+Symbol table: {v=-2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: v = v - 1 --- 
+Symbol table: {v=-2}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {v=-3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {v=-3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {v=-3}
+Out: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2]
+Heap table: {}
+-------------------

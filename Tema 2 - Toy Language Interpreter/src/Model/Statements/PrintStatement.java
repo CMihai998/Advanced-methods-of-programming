@@ -6,6 +6,7 @@ import Model.PrgState;
 import Model.Structures.MyIDictionary;
 import Model.Structures.MyIList;
 import Model.Structures.iHeap;
+import Model.Types.Type;
 import Model.Values.Value;
 
 public class PrintStatement implements iStatement {
@@ -29,6 +30,12 @@ public class PrintStatement implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new PrintStatement(this.expression.deepcopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type type = expression.typeCheck(typeEnvironment);
+        return typeEnvironment;
     }
 
     @Override

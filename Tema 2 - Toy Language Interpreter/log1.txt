@@ -1,0 +1,50 @@
+Execution Stack: (v int;(v = 2;print(v))) --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 2;print(v)) --- v int --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 2;print(v)) --- v int --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 2;print(v)) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: (v = 2;print(v)) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {v=2}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: print(v) --- 
+Symbol table: {v=2}
+Out: []
+Heap table: {}
+-------------------
+Execution Stack: 
+Symbol table: {v=2}
+Out: [2]
+Heap table: {}
+-------------------

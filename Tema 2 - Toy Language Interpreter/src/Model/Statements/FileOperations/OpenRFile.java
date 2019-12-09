@@ -8,6 +8,7 @@ import Model.Structures.FileTable;
 import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
@@ -56,6 +57,14 @@ public class OpenRFile implements iStatement {
     public iStatement deepcopy() throws MyException {
         return new OpenRFile(this.expression.deepcopy());
     }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type expressionType = expression.typeCheck(typeEnvironment);
+        if(!expressionType.equals(new StringType())) throw new MyException("The parameter of Open File is not of StringType!");
+        return typeEnvironment;
+    }
+
     @Override
     public String toString(){
         return "open(" + expression.toString() + ")";

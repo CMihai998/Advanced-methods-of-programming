@@ -3,6 +3,7 @@ package Model.Statements;
 import Model.Exceptions.MyException;
 import Model.PrgState;
 import Model.Structures.*;
+import Model.Types.Type;
 import Model.Values.StringValue;
 
 import java.io.BufferedReader;
@@ -27,6 +28,12 @@ public class ForkStatement implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new ForkStatement(statement.deepcopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        statement.typeCheck(typeEnvironment.deepcopy());
+        return typeEnvironment;
     }
 
     @Override

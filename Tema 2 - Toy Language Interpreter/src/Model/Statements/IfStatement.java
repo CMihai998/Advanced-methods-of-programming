@@ -7,6 +7,7 @@ import Model.Structures.MyIDictionary;
 import Model.Structures.MyIStack;
 import Model.Structures.iHeap;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
 
@@ -31,6 +32,18 @@ public class IfStatement implements iStatement {
     @Override
     public iStatement deepcopy() throws MyException {
         return new IfStatement(this.expression.deepcopy(), this.thenStatement.deepcopy(), this.elseStatement.deepcopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type typeExpression = expression.typeCheck(typeEnvironment);
+        if(!typeExpression.equals(new BoolType())) throw new MyException("The condition of IF is not a boolean value!");
+
+        MyIDictionary<String, Type> thenEnvironment, elseEnvironment;
+        thenStatement.typeCheck(typeEnvironment.deepcopy());
+        elseStatement.typeCheck(typeEnvironment.deepcopy());
+
+        return typeEnvironment;
     }
 
     @Override

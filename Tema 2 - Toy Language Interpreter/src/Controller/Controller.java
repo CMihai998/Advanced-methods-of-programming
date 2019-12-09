@@ -122,4 +122,8 @@ public class Controller {
         }
         else return null;
     }
+
+    public iStatement getOriginalProgram(){
+        return repository.getOriginalProgram();
+    }
 }

@@ -3,6 +3,7 @@ package Model.Expressions;
 import Model.Exceptions.MyException;
 import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
+import Model.Types.Type;
 import Model.Values.IntValue;
 import Model.Values.Value;
 
@@ -20,6 +21,11 @@ public class ValueExpression implements iExpression {
     @Override
     public String toString(){
         return val.toString();
+    }
+
+    @Override
+    public Type typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        return val.getType();
     }
 
     @Override

@@ -13,4 +13,5 @@ public interface MyIDictionary<Type1, Type2> {
     String toString();
     boolean isDefined(Type1 id);
    MyIDictionary<Type1, Type2> deepcopy();
+    MyIDictionary<Type1, Type2> shallowcopy();
 }

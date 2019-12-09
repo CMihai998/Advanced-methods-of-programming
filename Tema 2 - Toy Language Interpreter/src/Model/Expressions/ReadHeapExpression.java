@@ -3,6 +3,8 @@ package Model.Expressions;
 import Model.Exceptions.MyException;
 import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
+import Model.Types.RefType;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
@@ -38,5 +40,13 @@ public class ReadHeapExpression implements iExpression {
     @Override
     public String toString(){
         return "Read(" + expression.toString() + ")";
+    }
+
+    @Override
+    public Type typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
+        Type type = expression.typeCheck(typeEnvironment);
+        if(!(type instanceof RefType)) throw new MyException("The argument of Read Heap is not a RefType!");
+        RefType reference = (RefType) type;
+        return reference.getWrapped();
     }
 }

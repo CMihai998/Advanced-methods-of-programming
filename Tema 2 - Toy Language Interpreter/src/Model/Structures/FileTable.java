@@ -62,4 +62,13 @@ public class FileTable<StringValue, BufferedReader> implements MyIDictionary<Str
         }
         return (MyIDictionary<StringValue, BufferedReader>) clone;
     }
+
+    @Override
+    public MyIDictionary<StringValue, BufferedReader> shallowcopy() {
+        Map<StringValue, BufferedReader> clone = new HashMap<StringValue, BufferedReader>();
+        for (Map.Entry<StringValue, BufferedReader> element: table.entrySet()){
+            clone.put(element.getKey(), element.getValue());
+        }
+        return (MyIDictionary<StringValue, BufferedReader>) clone;
+    }
 }
