@@ -144,7 +144,7 @@ public class PrgState {
     }
 
     public PrgState oneStepExecution() throws MyException {
-        if(executionStack.isEmpty()) throw new MyException("Execution stack is empty! :'( " + id);
+        if(executionStack.isEmpty()) return null;
 
         iStatement currentStatement = executionStack.pop();
 

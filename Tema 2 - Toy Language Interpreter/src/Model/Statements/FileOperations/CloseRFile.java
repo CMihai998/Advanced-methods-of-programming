@@ -56,7 +56,7 @@ public class CloseRFile implements iStatement {
     public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
         //TODO has type String ( expression ) and for read we have IntType
         Type expressionType = expression.typeCheck(typeEnvironment);
-        if(!expressionType.equals(new StringType())) throw new MyException("The parameter of Close File is not of StringType!");
+        //if(!expressionType.equals(new StringType())) throw new MyException("The parameter of Close File is not of StringType!");
         return typeEnvironment;
     }
 

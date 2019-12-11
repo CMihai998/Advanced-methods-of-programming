@@ -41,7 +41,7 @@ public class ReadFile implements iStatement {
             throw new MyException("Failed to read from file :'( \n FILE NOT DEFINED");
         }
 
-        BufferedReader currentReader = (BufferedReader) fileTable.get((StringValue) value);
+        BufferedReader currentReader = (BufferedReader) fileTable.get(value);
         try{
             String lineRead = currentReader.readLine();
             IntValue intValue;
@@ -65,7 +65,7 @@ public class ReadFile implements iStatement {
     @Override
     public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnvironment) throws MyException {
         Type expressionType = expression.typeCheck(typeEnvironment);
-        if(!expressionType.equals(new IntType())) throw new MyException("The parameter of Close File is not of StringType!");
+        if(!expressionType.equals(new StringType())) throw new MyException("The parameter of Close File is not of StringType!");
         return typeEnvironment;
     }
 
