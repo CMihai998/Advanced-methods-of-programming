@@ -5,14 +5,15 @@ import Model.Values.Value;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class HeapTable<I extends Number, V> implements iHeap<Integer, Value> {
-    private Integer nextFreeMemory;
+    private AtomicInteger nextFreeMemory;
     HashMap<Integer, Value> table;
 
     public HeapTable(){
         this.table = new HashMap<Integer, Value>();
-        this.nextFreeMemory = 1;
+        nextFreeMemory = new AtomicInteger(1);
         table.put(0, null);
     }
 
@@ -28,8 +29,8 @@ public class HeapTable<I extends Number, V> implements iHeap<Integer, Value> {
 
     @Override
     public void update(Value value) {
-        table.put(nextFreeMemory, value);
-        nextFreeMemory++;
+        table.put(nextFreeMemory.get(), value);
+        nextFreeMemory.set(nextFreeMemory.get() + 1);
     }
 
     @Override
@@ -39,7 +40,7 @@ public class HeapTable<I extends Number, V> implements iHeap<Integer, Value> {
 
     @Override
     public Integer getCurrentFree() {
-        return nextFreeMemory;
+        return nextFreeMemory.get();
     }
 
     @Override

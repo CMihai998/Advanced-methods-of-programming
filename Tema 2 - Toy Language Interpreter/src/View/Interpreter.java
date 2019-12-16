@@ -39,59 +39,50 @@ public class Interpreter {
             iStatement example1 = programOne();
             PrgState program1 = new PrgState(example1);
             iRepository repository1 = new Repository("log1.txt");
+            repository1.addProgram(program1);
             Controller controller1 = new Controller(repository1);
-            controller1.addProgram(program1);
-
 
             iStatement example2 = programTwo();
-
             PrgState program2 = new PrgState(example2);
             iRepository repository2 = new Repository("log2.txt");
             repository2.addProgram(program2);
             Controller controller2 = new Controller(repository2);
-            controller2.addProgram(program2);
 
             iStatement example3 = programThree();
             PrgState program3 = new PrgState(example3);
             iRepository repository3 = new Repository("log3.txt");
             repository3.addProgram(program3);
             Controller controller3 = new Controller(repository3);
-            controller3.addProgram(program3);
 
             iStatement example4 = programFour();
             PrgState program4 = new PrgState(example4);
             iRepository repository4 = new Repository("log4.txt");
             repository4.addProgram(program4);
             Controller controller4 = new Controller(repository4);
-            controller4.addProgram(program4);
 
             iStatement example5 = programFive();
             PrgState program5 = new PrgState(example5);
             iRepository repository5 = new Repository("log5.txt");
             repository5.addProgram(program5);
             Controller controller5 = new Controller(repository5);
-            controller5.addProgram(program5);
 
             iStatement example6 = programSix();
             PrgState program6 = new PrgState(example6);
             iRepository repository6 = new Repository("log6.txt");
             repository6.addProgram(program6);
             Controller controller6 = new Controller(repository6);
-            controller6.addProgram(program6);
 
             iStatement example7 = programSeven();
             PrgState program7 = new PrgState(example7);
             iRepository repository7 = new Repository("log7.txt");
             repository7.addProgram(program7);
             Controller controller7 = new Controller(repository7);
-            controller7.addProgram(program7);
 
             iStatement example8 = programEight();
             PrgState program8 = new PrgState(example8);
             iRepository repository8 = new Repository("log8.txt");
             repository8.addProgram(program8);
             Controller controller8 = new Controller(repository8);
-            controller8.addProgram(program8);
 
             TextMenu menu = new TextMenu();
             menu.addCommand(new ExitCommand("0", "Exit"));
@@ -181,23 +172,8 @@ public class Interpreter {
               new CompoundStatement(new VariableDeclarationStatement("a",new RefType(new IntType())),
                       new CompoundStatement(new AssignmentStatement("v",new ValueExpression(new IntValue(10))),
                               new CompoundStatement(new NewStatement("a",new ValueExpression(new IntValue(22))),
-                                      new CompoundStatement(new ForkStatement(forked),new CompoundStatement(new PrintStatement(new VariableExpression("v")),new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))))
+                                      new CompoundStatement(new ForkStatement(forked), new CompoundStatement(new PrintStatement(new VariableExpression("v")),new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))))
                       )));
   }
 
-  private static iStatement programOpt(){
-      iStatement t1=new CompoundStatement(new VariableDeclarationStatement("v", new IntType()), new VariableDeclarationStatement("a", new RefType(new IntType())));
-      iStatement t2=new CompoundStatement(new AssignmentStatement("v", new ValueExpression(new IntValue(10))), new NewStatement("a", new ValueExpression(new IntValue(22))));
-      iStatement t3=new CompoundStatement(t1,t2);
-      iStatement t4=new CompoundStatement(new WriteHeapStatement("a", new ValueExpression(new IntValue(30))),
-              new CompoundStatement(new AssignmentStatement("v", new ValueExpression(new IntValue(32))),
-                      new CompoundStatement(new PrintStatement(new VariableExpression("v")), new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))))));
-      iStatement t5=new CompoundStatement(t3 ,new ForkStatement(t4));
-      iStatement t6=new CompoundStatement(new PrintStatement(new VariableExpression("v")), new PrintStatement(new ReadHeapExpression(new VariableExpression("a"))));
-      iStatement ex10=new CompoundStatement(t5, t6);
-      return ex10;
-  }
-
-  //TODO add typeEnvironment field to prgState(? or not)
-    //TODO add typeCheck in execute before run with a locally created dictionary
 }

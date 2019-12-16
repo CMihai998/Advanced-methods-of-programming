@@ -35,6 +35,7 @@ public class Repository implements iRepository {
     @Override
     public void logProgramStateExecution(PrgState state) throws MyException {
         try(PrintWriter logFIle = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))){
+            logFIle.print("ID:" + state.getId() + '\n');
             logFIle.print("Execution Stack: " + state.getExecutionStack().toString() + '\n');
             logFIle.print("Symbol table: " + state.getSymbolTable().toString() + '\n');
             logFIle.print("Out: " + state.getOut().toString() + '\n');

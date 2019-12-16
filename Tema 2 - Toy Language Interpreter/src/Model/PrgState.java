@@ -33,7 +33,7 @@ public class PrgState {
         this.fileTable = fileTable;
         this.heapTable = heapTable;
         this.id = getNewId();
-        this.executionStack.push(originalProgram.deepcopy());
+        this.executionStack.push(originalProgram);
     }
 
     public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable, int id) throws MyException {

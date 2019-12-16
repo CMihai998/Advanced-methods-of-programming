@@ -40,4 +40,11 @@ public class MyStack<Type> implements MyIStack<Type> {
         }
         return builder.toString();
     }
+
+    @Override
+    public Type top() {
+        if(stack.isEmpty())
+            return null;
+        return stack.peek();
+    }
 }

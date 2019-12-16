@@ -22,15 +22,7 @@ public class Controller {
     }
 
     public void oneStepForAllPrograms(List<PrgState> programs) throws MyException, InterruptedException {
-        programs.forEach(program -> {
-            try {
-                repository.logProgramStateExecution(program);
-
-            } catch (MyException e) {
-                System.out.println("One step failed 401 " + e.toString());
-            }
-        });
-
+     
         //prepare list of callables
         List<Callable<PrgState>> callList = programs.stream()
                 .map((PrgState program) -> (Callable<PrgState>)() -> {return  program.oneStepExecution();})
@@ -55,6 +47,7 @@ public class Controller {
         }
 
         //add new threads to existing ones
+        //programs.clear();
         programs.addAll(newProgramList);
 
         programs.forEach(program -> {

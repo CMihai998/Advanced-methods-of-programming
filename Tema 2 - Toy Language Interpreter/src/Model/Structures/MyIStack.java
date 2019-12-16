@@ -6,4 +6,6 @@ public interface MyIStack<Type> {
     boolean isEmpty();
     int size();
     String toString();
+    Type top();
+
 }
