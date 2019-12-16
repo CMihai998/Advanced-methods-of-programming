@@ -48,8 +48,6 @@ public class OpenRFile implements iStatement {
             fileTable.update((StringValue) value, reader);
         } catch (FileNotFoundException e) {
             throw new MyException("Open file failed :'( \n IO Exception");
-        } catch (IOException e) {
-            throw new MyException("Open file failed :'( \n IO Exception");
         }
         return null;
     }

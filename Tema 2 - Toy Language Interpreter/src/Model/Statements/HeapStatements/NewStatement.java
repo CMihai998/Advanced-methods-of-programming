@@ -42,7 +42,7 @@ public class NewStatement implements iStatement {
         }
 
         RefValue valueToPutInTable = new RefValue((Integer) heapTable.getCurrentFree(), value.getType());
-        valueToPutInTable.setAddress((Integer) heapTable.getCurrentFree());
+        valueToPutInTable.setAddress(heapTable.getCurrentFree());
         symbolTable.update(variableName, valueToPutInTable);
         heapTable.update(value);
         return null;

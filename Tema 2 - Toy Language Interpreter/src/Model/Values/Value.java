@@ -8,5 +8,4 @@ public interface Value {
     boolean equals(Object another);
     Type getType();
     Value deepcopy();
-    //Value getValue();
 }

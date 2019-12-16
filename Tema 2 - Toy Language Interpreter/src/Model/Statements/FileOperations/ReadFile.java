@@ -41,7 +41,7 @@ public class ReadFile implements iStatement {
             throw new MyException("Failed to read from file :'( \n FILE NOT DEFINED");
         }
 
-        BufferedReader currentReader = (BufferedReader) fileTable.get((StringValue) value);
+        BufferedReader currentReader = fileTable.get((StringValue) value);
         try{
             if((!currentReader.ready()))
                 System.out.println("Current reader is ready");

@@ -21,9 +21,6 @@ public class WriteHeapStatement implements iStatement {
         this.expression = expression;
     }
 
-    public WriteHeapStatement(ReadHeapExpression a) {
-    }
-
     @Override
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symbolTable = state.getSymbolTable();

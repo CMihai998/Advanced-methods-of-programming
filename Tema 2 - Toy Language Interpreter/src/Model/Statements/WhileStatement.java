@@ -28,7 +28,7 @@ public class WhileStatement implements iStatement {
         iHeap<Integer, Value> heapTable = state.getHeapTable();
         Value value = expression.evaluate(symbolTable, heapTable);
         if(value.getType() != new BoolType()){
-            if(((BoolValue) value).getValue() == false){
+            if(!((BoolValue) value).getValue()){
                 return state;
             }else{
                 stack.push(this);

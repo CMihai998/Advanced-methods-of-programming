@@ -17,14 +17,7 @@ public class ForkStatement implements iStatement {
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
-        MyIStack<iStatement> stack = state.getExecutionStack();
-
-    /*    stack.push(new NopStatement());
-        stack.push(new NopStatement());
-        stack.push(new NopStatement());*/
-
         PrgState newProgramState = new PrgState(new MyStack<>(), state.getSymbolTable().deepcopy(), state.getOut(), statement, state.getFileTable(), state.getHeapTable());
-
        return newProgramState;
     }
 

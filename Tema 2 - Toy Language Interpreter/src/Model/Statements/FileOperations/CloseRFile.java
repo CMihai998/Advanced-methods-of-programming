@@ -37,7 +37,7 @@ public class CloseRFile implements iStatement {
             throw new MyException("Failed to close the file :'( \n FILE NOT DEFINED");
         }
 
-        BufferedReader currentReader = (BufferedReader) fileTable.get((StringValue) value);
+        BufferedReader currentReader = fileTable.get((StringValue) value);
         try{
             currentReader.close();
         } catch (IOException e) {

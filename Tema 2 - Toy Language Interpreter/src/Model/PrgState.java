@@ -18,7 +18,7 @@ public class PrgState {
     private MyIDictionary<Model.Values.StringValue, BufferedReader> fileTable;
     private iHeap<Integer, Value> heapTable;
     public int id;
-    private static int lastAssignedId = 1;
+    private static int lastAssignedId = 0;
 
     public static int getNewId(){
         lastAssignedId++;
@@ -134,10 +134,6 @@ public class PrgState {
                 "Out list: " + out.toString() + '\n' +
                 "Heap: " + heapTable.toString() + '\n';
     }
-
-    /*public PrgState deepcopy() throws MyException {
-        return new PrgState(this.executionStack, this.symbolTable.deepcopy(), this.out, this.originalProgram.deepcopy(), this.fileTable.deepcopy(), this.heapTable);
-    }*/
 
     public Boolean isNotCompleted(){
         return !executionStack.isEmpty();

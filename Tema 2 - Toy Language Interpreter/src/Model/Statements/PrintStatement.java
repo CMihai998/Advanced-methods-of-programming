@@ -12,8 +12,6 @@ import Model.Values.Value;
 public class PrintStatement implements iStatement {
     private iExpression expression;
 
-    public PrintStatement(){};
-
     public PrintStatement(iExpression expression){
         this.expression = expression;
     }

@@ -26,13 +26,6 @@ import java.io.BufferedReader;
 import java.util.Scanner;
 
 public class Interpreter {
-    private Controller controller;
-
-    public Interpreter(){}
-
-    public Interpreter(Controller controller){
-        this.controller = controller;
-    }
 
     public static void main(String[] args){
         try {
