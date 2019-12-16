@@ -3,7 +3,6 @@ package Model.Expressions;
 import Model.Exceptions.MyException;
 import Model.Structures.MyIDictionary;
 import Model.Structures.iHeap;
-import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Types.Type;
 import Model.Values.BoolValue;

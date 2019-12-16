@@ -47,7 +47,6 @@ public class Controller {
         }
 
         //add new threads to existing ones
-        //programs.clear();
         programs.addAll(newProgramList);
 
         programs.forEach(program -> {

@@ -1,15 +1,18 @@
 package Model.Structures;
 
+import Model.Values.StringValue;
+
+import java.io.BufferedReader;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class FileTable<StringValue, BufferedReader> implements MyIDictionary<StringValue, BufferedReader>{
-    Map<StringValue, BufferedReader> table;
+public class FileTable implements MyIDictionary<Model.Values.StringValue, BufferedReader>{
+    Map<Model.Values.StringValue, BufferedReader> table;
 
     public  FileTable(){
-        this.table = new HashMap<>();
+        this.table = new HashMap<Model.Values.StringValue, BufferedReader>();
     }
 
     @Override
@@ -24,18 +27,18 @@ public class FileTable<StringValue, BufferedReader> implements MyIDictionary<Str
 
 
     @Override
-    public BufferedReader get(StringValue key) {
-        return (BufferedReader) table.get(key);
+    public BufferedReader get(Model.Values.StringValue key) {
+        return table.get(key);
     }
 
     @Override
-    public BufferedReader remove(StringValue key) {
-        return (BufferedReader) table.remove(key);
+    public BufferedReader remove(Model.Values.StringValue key) {
+        return table.remove(key);
     }
 
     @Override
-    public BufferedReader update(StringValue key, BufferedReader value) {
-        return (BufferedReader) table.put(key,value);
+    public BufferedReader update(Model.Values.StringValue key, BufferedReader value) {
+        return table.put(key,value);
     }
 
     @Override
@@ -50,25 +53,25 @@ public class FileTable<StringValue, BufferedReader> implements MyIDictionary<Str
 
 
     @Override
-    public boolean isDefined(StringValue id) {
+    public boolean isDefined(Model.Values.StringValue id) {
         return table.get(id) != null;
     }
 
     @Override
-    public MyIDictionary<StringValue, BufferedReader> deepcopy() {
-        Map<StringValue, BufferedReader> clone = new HashMap<StringValue, BufferedReader>();
-        for (Map.Entry<StringValue, BufferedReader> element: table.entrySet()){
-            clone.put(element.getKey(), element.getValue());
+    public MyIDictionary<Model.Values.StringValue, BufferedReader> deepcopy() {
+        Map<Model.Values.StringValue, BufferedReader> clone = new HashMap<Model.Values.StringValue, BufferedReader>();
+        for (Map.Entry<Model.Values.StringValue, BufferedReader> element: table.entrySet()){
+            clone.put((Model.Values.StringValue) element.getKey().deepcopy(), element.getValue());
         }
-        return (MyIDictionary<StringValue, BufferedReader>) clone;
+        return (MyIDictionary<Model.Values.StringValue, BufferedReader>) clone;
     }
 
     @Override
-    public MyIDictionary<StringValue, BufferedReader> shallowcopy() {
-        Map<StringValue, BufferedReader> clone = new HashMap<StringValue, BufferedReader>();
-        for (Map.Entry<StringValue, BufferedReader> element: table.entrySet()){
+    public MyIDictionary<Model.Values.StringValue, BufferedReader> shallowcopy() {
+        Map<Model.Values.StringValue, BufferedReader> clone = new HashMap<Model.Values.StringValue, BufferedReader>();
+        for (Map.Entry<Model.Values.StringValue, BufferedReader> element: table.entrySet()){
             clone.put(element.getKey(), element.getValue());
         }
-        return (MyIDictionary<StringValue, BufferedReader>) clone;
+        return (MyIDictionary<Model.Values.StringValue, BufferedReader>) clone;
     }
 }

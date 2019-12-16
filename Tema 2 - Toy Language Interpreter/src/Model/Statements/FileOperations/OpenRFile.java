@@ -37,13 +37,14 @@ public class OpenRFile implements iStatement {
             throw new MyException("Failed to open the file :'( \n STRING NOT VALID");
         }
 
-        String actualString = ((StringValue) value).toString();
+        String actualString = ((StringValue) value).getValue();
 
         if(fileTable.isDefined((StringValue) value)){
             throw new MyException("Failed to open the file :'( \n FILE ALREADY DEFINED");
         }
 
-        try(BufferedReader reader = new BufferedReader(new FileReader(actualString))){
+        try{
+            BufferedReader reader = new BufferedReader(new FileReader(actualString));
             fileTable.update((StringValue) value, reader);
         } catch (FileNotFoundException e) {
             throw new MyException("Open file failed :'( \n IO Exception");

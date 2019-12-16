@@ -15,7 +15,7 @@ public class PrgState {
     private MyIDictionary<String, Value> symbolTable;
     private MyIList<Value> out;
     private iStatement originalProgram;
-    private MyIDictionary<StringValue, BufferedReader> fileTable;
+    private MyIDictionary<Model.Values.StringValue, BufferedReader> fileTable;
     private iHeap<Integer, Value> heapTable;
     public int id;
     private static int lastAssignedId = 1;
@@ -36,7 +36,7 @@ public class PrgState {
         this.executionStack.push(originalProgram);
     }
 
-    public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable, int id) throws MyException {
+    public PrgState(MyIStack<iStatement> executionStack, MyIDictionary<String, Model.Values.Value> symbolTable, MyIList<Model.Values.Value> out, iStatement originalProgram, MyIDictionary<Model.Values.StringValue, BufferedReader> fileTable, iHeap<Integer, Value> heapTable, int id) throws MyException {
         this.executionStack = executionStack;
         this. symbolTable = symbolTable;
         this.out = out;
@@ -53,7 +53,7 @@ public class PrgState {
         this.out = new MyList<Value>();
         this.originalProgram = originalProgram.deepcopy();
         this.executionStack.push(originalProgram);
-        this.fileTable = new FileTable<StringValue, BufferedReader>();
+        this.fileTable = new FileTable();
         this.heapTable = new HeapTable<Integer, Value>();
         this.id = getNewId();
     }
@@ -70,7 +70,7 @@ public class PrgState {
         this.symbolTable = new MyDictionary<String, Value>();
         this.out = new MyList<Value>();
         this.executionStack.push(this.originalProgram.deepcopy());
-        this.fileTable = new FileTable<StringValue, BufferedReader>();
+        this.fileTable = new FileTable();
         this.heapTable = new HeapTable<Integer, Value>();
     }
 
