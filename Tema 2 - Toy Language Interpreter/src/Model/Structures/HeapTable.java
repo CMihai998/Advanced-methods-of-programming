@@ -2,19 +2,18 @@ package Model.Structures;
 
 import Model.Values.Value;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class HeapTable<I extends Number, V> implements iHeap<Integer, Value> {
     private AtomicInteger nextFreeMemory;
-    HashMap<Integer, Value> table;
+    ConcurrentHashMap<Integer, Value> table;
 
     public HeapTable(){
-        this.table = new HashMap<Integer, Value>();
+        this.table = new ConcurrentHashMap<Integer, Value>();
         nextFreeMemory = new AtomicInteger(1);
-        table.put(0, null);
     }
 
     @Override
@@ -55,7 +54,7 @@ public class HeapTable<I extends Number, V> implements iHeap<Integer, Value> {
 
     @Override
     public void setContent(Map newContent) {
-        this.table = (HashMap) newContent;
+        this.table = (ConcurrentHashMap<Integer, Value>) newContent;
     }
 
     @Override

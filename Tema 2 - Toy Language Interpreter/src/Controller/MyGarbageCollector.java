@@ -17,7 +17,7 @@ public class MyGarbageCollector {
 
         return heapSet.stream()
                 .filter(e -> symbolTableAddresses.contains(e.getKey())) //don't take in consideration elements that are not reachable
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));//collect em all in a list
+                .collect(Collectors.toConcurrentMap(Map.Entry::getKey, Map.Entry::getValue));//collect em all in a list
     }
 
     public List<Integer> getAddressFromTables(List<PrgState> programs){

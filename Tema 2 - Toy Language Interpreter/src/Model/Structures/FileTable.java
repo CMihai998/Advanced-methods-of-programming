@@ -7,12 +7,13 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class FileTable implements MyIDictionary<Model.Values.StringValue, BufferedReader>{
-    Map<Model.Values.StringValue, BufferedReader> table;
+    ConcurrentHashMap<StringValue, BufferedReader> table;
 
     public  FileTable(){
-        this.table = new HashMap<Model.Values.StringValue, BufferedReader>();
+        this.table = new ConcurrentHashMap<Model.Values.StringValue, BufferedReader>();
     }
 
     @Override

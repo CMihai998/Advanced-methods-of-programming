@@ -3784,3 +3784,105 @@ Symbol table: {varf=test.in, varc=4}
 Out: [4, 4]
 Heap table: {}
 -------------------
+ID:4
+Execution Stack: (varf = test.in;(open(varf);(varc int;(open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf)))))))) --- varf String --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (varf = test.in;(open(varf);(varc int;(open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf)))))))) --- 
+Symbol table: {varf=}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (open(varf);(varc int;(open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf))))))) --- varf = test.in --- 
+Symbol table: {varf=}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (open(varf);(varc int;(open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf))))))) --- 
+Symbol table: {varf=test.in}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (varc int;(open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf)))))) --- open(varf) --- 
+Symbol table: {varf=test.in}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (varc int;(open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf)))))) --- 
+Symbol table: {varf=test.in}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf))))) --- varc int --- 
+Symbol table: {varf=test.in}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (open(varf, varc);(print(varc);(open(varf, varc);(print(varc);close(varf))))) --- 
+Symbol table: {varf=test.in, varc=0}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (print(varc);(open(varf, varc);(print(varc);close(varf)))) --- open(varf, varc) --- 
+Symbol table: {varf=test.in, varc=0}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (print(varc);(open(varf, varc);(print(varc);close(varf)))) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (open(varf, varc);(print(varc);close(varf))) --- print(varc) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: []
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (open(varf, varc);(print(varc);close(varf))) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: [4]
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (print(varc);close(varf)) --- open(varf, varc) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: [4]
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: (print(varc);close(varf)) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: [4]
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: close(varf) --- print(varc) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: [4]
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: close(varf) --- 
+Symbol table: {varf=test.in, varc=4}
+Out: [4, 4]
+Heap table: {}
+-------------------
+ID:4
+Execution Stack: 
+Symbol table: {varf=test.in, varc=4}
+Out: [4, 4]
+Heap table: {}
+-------------------
