@@ -1,42 +1,17 @@
 package Model.Structures;
 
-import java.util.LinkedList;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class MyList<Type> implements MyIList<Type> {
-    private LinkedList<Type> list;
+    private ConcurrentLinkedDeque<Type> list;
 
     public MyList(){
-        list = new LinkedList<Type>();
+        list = new ConcurrentLinkedDeque<Type>();
     }
 
     @Override
     public boolean add(Type item) {
         return list.add(item);
-    }
-
-    @Override
-    public void add(int position, Type item) {
-         list.add(position, item);
-    }
-
-    @Override
-    public boolean remove(Type item) {
-        return list.remove(item);
-    }
-
-    @Override
-    public Type remove(int position) {
-        return list.remove(position);
-    }
-
-    @Override
-    public Type set(int index, Type item) {
-        return list.set(index, item);
-    }
-
-    @Override
-    public Type get(int index) {
-        return list.get(index);
     }
 
     @Override

@@ -138,3 +138,33 @@ Symbol table: {v=2}
 Out: [2]
 Heap table: {}
 -------------------
+ID:1
+Execution Stack: (v = 2;print(v)) --- v int --- 
+Symbol table: {}
+Out: []
+Heap table: {}
+-------------------
+ID:1
+Execution Stack: (v = 2;print(v)) --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+ID:1
+Execution Stack: print(v) --- v = 2 --- 
+Symbol table: {v=0}
+Out: []
+Heap table: {}
+-------------------
+ID:1
+Execution Stack: print(v) --- 
+Symbol table: {v=2}
+Out: []
+Heap table: {}
+-------------------
+ID:1
+Execution Stack: 
+Symbol table: {v=2}
+Out: [2]
+Heap table: {}
+-------------------

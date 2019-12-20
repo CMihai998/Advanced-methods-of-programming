@@ -28,8 +28,7 @@ public class HeapTable<I extends Number, V> implements iHeap<Integer, Value> {
 
     @Override
     public void update(Value value) {
-        table.put(nextFreeMemory.get(), value);
-        nextFreeMemory.set(nextFreeMemory.get() + 1);
+        table.put(nextFreeMemory.getAndIncrement(), value);
     }
 
     @Override
