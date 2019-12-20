@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Structures/HeapTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tema 2 - Toy Language Interpreter/Model/Structures/HeapTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Structures/HeapTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/HeapTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyIList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyIList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Structures/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Structures/MyList.java" afterDir="false" />
-    </list>
+    <list default="true" id="b098d525-4d84-4aa2-a156-1151dd9baf0a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +182,7 @@
       <workItem from="1576531818965" duration="1702000" />
       <workItem from="1576794654371" duration="837000" />
       <workItem from="1576795639574" duration="238000" />
-      <workItem from="1576837317837" duration="1242000" />
+      <workItem from="1576837317837" duration="1390000" />
     </task>
     <task id="LOCAL-00001" summary="some bugs solved">
       <created>1576495905351</created>
