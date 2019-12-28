@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="702.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewFx.ControllerFX">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="315.0" minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="406.0" minHeight="10.0" prefHeight="342.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="227.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <SplitPane dividerPositions="0.13377926421404682" orientation="VERTICAL" prefHeight="203.0" prefWidth="272.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="239.0">
+                    <children>
+                        <Label layoutX="167.0" layoutY="11.0" text="Output" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ListView fx:id="outList" layoutX="12.0" layoutY="11.0" prefHeight="255.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <SplitPane dividerPositions="0.13377926421404682" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <items>
+                <AnchorPane>
+                    <children>
+                        <Label layoutX="152.0" layoutY="11.0" text="File Table" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ListView fx:id="fileTable" layoutX="16.0" layoutY="14.0" prefHeight="255.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <SplitPane dividerPositions="0.13712374581939799" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="90.0" layoutY="12.0" prefHeight="15.0" prefWidth="202.0" text="Program States" textAlignment="CENTER" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ListView  fx:id="listOfProgramStates" onMouseClicked="#updateData" prefHeight="254.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <SplitPane dividerPositions="0.11470588235294117" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label layoutX="80.0" layoutY="7.0" text="SymbolTable of selected PrgState" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TableView fx:id="symbolTable" layoutX="72.0" layoutY="49.0" prefHeight="297.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="symbolNameColumn" prefWidth="194.0" text="Name" />
+                                <TableColumn fx:id="symbolValueColumn" prefWidth="185.0" text="Value" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <SplitPane dividerPositions="0.11470588235294117" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="15.0" prefWidth="330.0" text="Execution Stack of selected PrgState" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ListView fx:id="executableStack" prefHeight="297.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <SplitPane dividerPositions="0.11470588235294117" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label layoutX="153.0" layoutY="7.0" text="Heap Table" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TableView fx:id="heapTable" layoutX="81.0" layoutY="22.0" prefHeight="297.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="heapAddressColumn" prefWidth="190.0" text="Address" />
+                                <TableColumn fx:id="heapValueColumn" prefWidth="189.0" text="Value" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <children>
+                <Button fx:id="oneStepForAllButton" layoutX="121.0" layoutY="17.0" mnemonicParsing="false" onAction="#oneStepEvaluation" prefHeight="25.0" prefWidth="134.0" text="Run one step" />
+            </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <children>
+                <Button fx:id="exitButton" layoutX="160.0" layoutY="17.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <children>
+                <TextField fx:id="numberOfProgramStates" layoutX="239.0" layoutY="17.0" prefHeight="25.0" prefWidth="27.0" />
+                <Label layoutX="96.0" layoutY="22.0" prefHeight="15.0" prefWidth="148.0" text="Nr. of program states" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
