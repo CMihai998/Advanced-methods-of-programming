@@ -143,6 +143,10 @@ public class ControllerFX {
         updateOutList();
     }
 
+    public iStatement getOriginalProgram(){
+        return controller.getOriginalProgram();
+    }
+
     private void updateTotalProgramStates(){
         numberOfProgramStates.setText(Integer.toString(repository.getProgramList().size()));
     }

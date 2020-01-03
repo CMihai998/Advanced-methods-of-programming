@@ -8,10 +8,9 @@ import Model.Statements.FileOperations.OpenRFile;
 import Model.Statements.FileOperations.ReadFile;
 import Model.Statements.HeapStatements.NewStatement;
 import Model.Statements.HeapStatements.WriteHeapStatement;
-import Model.Types.BoolType;
-import Model.Types.IntType;
-import Model.Types.RefType;
-import Model.Types.StringType;
+import Model.Structures.MyDictionary;
+import Model.Structures.MyIDictionary;
+import Model.Types.*;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Model.Values.StringValue;
@@ -22,6 +21,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceDialog;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -76,16 +76,26 @@ public class Main extends Application {
                     break;
             }
         }
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
+            Parent root = fxmlLoader.load();
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
-        Parent root = fxmlLoader.load();
+            ControllerFX controllerFX = fxmlLoader.getController();
+            controllerFX.setProgram(expression);
 
-        ControllerFX controllerFX = fxmlLoader.getController();
-        controllerFX.setProgram(expression);
+            MyIDictionary<String, Type> environmentVariables = new MyDictionary<String, Type>();
+            System.out.println("\nCHECKING TYPES...");
+            controllerFX.getOriginalProgram().typeCheck(environmentVariables);
+            System.out.println("TYPES MATCH... \n\t STARTING EXECUTION... \n");
 
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 1280, 720));
-        primaryStage.show();
+            primaryStage.setTitle("Hello World");
+            primaryStage.setScene(new Scene(root, 1280, 720));
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (MyException e) {
+            e.printStackTrace();
+        }
     }
 
 
